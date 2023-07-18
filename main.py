@@ -6,7 +6,15 @@ screen = Screen()
 screen.setup(width=500, height=400)
 user_bet = screen.textinput(title="Make your bet", prompt="Which turtle will win? Enter your color: ")
 
-
+# adding finish line
+finish = Turtle()
+finish.hideturtle()
+finish.penup()
+finish.speed(8)
+finish.goto(230,250)
+finish.right(90)
+finish.pendown()
+finish.forward(500)
 
 color = ['red', 'blue', 'green', 'purple', 'orange']
 position = [-60, -30, 0, 30, 60]
